@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A708AA9A1F4C6657009E5D36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708AA991F4C6657009E5D36 /* AppDelegate.swift */; };
-		A708AA9C1F4C6657009E5D36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708AA9B1F4C6657009E5D36 /* ViewController.swift */; };
 		A708AA9F1F4C6657009E5D36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A708AA9D1F4C6657009E5D36 /* Main.storyboard */; };
 		A708AAA11F4C6657009E5D36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A708AAA01F4C6657009E5D36 /* Assets.xcassets */; };
 		A708AAA41F4C6657009E5D36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A708AAA21F4C6657009E5D36 /* LaunchScreen.storyboard */; };
 		A708AAAF1F4C6657009E5D36 /* MyTravelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708AAAE1F4C6657009E5D36 /* MyTravelTests.swift */; };
 		A708AABA1F4C6657009E5D36 /* MyTravelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708AAB91F4C6657009E5D36 /* MyTravelUITests.swift */; };
+		A7F497F21F4F152300F6B0AC /* MyTravelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F497F11F4F152300F6B0AC /* MyTravelTableViewController.swift */; };
+		A7FE52D61F4D989400CDCA46 /* MyTravelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FE52D51F4D989400CDCA46 /* MyTravelTableViewCell.swift */; };
+		A7FE52DB1F4DA5FE00CDCA46 /* TravelModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7FE52D91F4DA5FE00CDCA46 /* TravelModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		A708AA961F4C6657009E5D36 /* MyTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A708AA991F4C6657009E5D36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A708AA9B1F4C6657009E5D36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A708AA9E1F4C6657009E5D36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A708AAA01F4C6657009E5D36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A708AAA31F4C6657009E5D36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		A708AAB51F4C6657009E5D36 /* MyTravelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTravelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A708AAB91F4C6657009E5D36 /* MyTravelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTravelUITests.swift; sourceTree = "<group>"; };
 		A708AABB1F4C6657009E5D36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7F497F11F4F152300F6B0AC /* MyTravelTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTravelTableViewController.swift; sourceTree = "<group>"; };
+		A7FE52D51F4D989400CDCA46 /* MyTravelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTravelTableViewCell.swift; sourceTree = "<group>"; };
+		A7FE52DA1F4DA5FE00CDCA46 /* TravelModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TravelModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		A708AA8D1F4C6657009E5D36 = {
 			isa = PBXGroup;
 			children = (
+				A7F497F11F4F152300F6B0AC /* MyTravelTableViewController.swift */,
 				A708AA981F4C6657009E5D36 /* MyTravel */,
 				A708AAAD1F4C6657009E5D36 /* MyTravelTests */,
 				A708AAB81F4C6657009E5D36 /* MyTravelUITests */,
@@ -98,8 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				A708AA991F4C6657009E5D36 /* AppDelegate.swift */,
-				A708AA9B1F4C6657009E5D36 /* ViewController.swift */,
 				A708AA9D1F4C6657009E5D36 /* Main.storyboard */,
+				A7FE52D91F4DA5FE00CDCA46 /* TravelModel.xcdatamodeld */,
+				A7FE52D51F4D989400CDCA46 /* MyTravelTableViewCell.swift */,
 				A708AAA01F4C6657009E5D36 /* Assets.xcassets */,
 				A708AAA21F4C6657009E5D36 /* LaunchScreen.storyboard */,
 				A708AAA51F4C6657009E5D36 /* Info.plist */,
@@ -260,8 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A708AA9C1F4C6657009E5D36 /* ViewController.swift in Sources */,
+				A7FE52D61F4D989400CDCA46 /* MyTravelTableViewCell.swift in Sources */,
+				A7F497F21F4F152300F6B0AC /* MyTravelTableViewController.swift in Sources */,
 				A708AA9A1F4C6657009E5D36 /* AppDelegate.swift in Sources */,
+				A7FE52DB1F4DA5FE00CDCA46 /* TravelModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +518,7 @@
 				A708AAC01F4C6657009E5D36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A708AAC11F4C6657009E5D36 /* Build configuration list for PBXNativeTarget "MyTravelTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +527,7 @@
 				A708AAC31F4C6657009E5D36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A708AAC41F4C6657009E5D36 /* Build configuration list for PBXNativeTarget "MyTravelUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,8 +536,22 @@
 				A708AAC61F4C6657009E5D36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A7FE52D91F4DA5FE00CDCA46 /* TravelModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A7FE52DA1F4DA5FE00CDCA46 /* TravelModel.xcdatamodel */,
+			);
+			currentVersion = A7FE52DA1F4DA5FE00CDCA46 /* TravelModel.xcdatamodel */;
+			path = TravelModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A708AA8E1F4C6657009E5D36 /* Project object */;
 }
